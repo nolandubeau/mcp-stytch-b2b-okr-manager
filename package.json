@@ -1,0 +1,46 @@
+{
+	"name": "mcp-stytch-b2b-okr-manager",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"lint": "eslint .",
+		"preview": "npm run build && vite preview",
+		"deploy": "npm run build && wrangler deploy",
+		"cf-typegen": "wrangler types",
+		"update-policy": "node update-policy.js",
+		"type-check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.11.4",
+		"@stytch/react": "^19.5.2",
+		"@stytch/vanilla-js": "^5.24.0",
+		"agents": "^0.0.90",
+		"commander": "^14.0.0",
+		"hono": "^4.7.10",
+		"lucide-react": "^0.511.0",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-router-dom": "^7.6.0",
+		"stytch": "^12.19.0",
+		"workers-mcp": "^0.0.13",
+		"zod": "^3.25.16"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "^1.2.3",
+		"@eslint/js": "^9.27.0",
+		"@types/react": "^19.1.5",
+		"@types/react-dom": "^19.1.5",
+		"@vitejs/plugin-react": "^4.4.1",
+		"eslint": "^9.27.0",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.20",
+		"globals": "^16.1.0",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.32.1",
+		"vite": "^6.3.5",
+		"wrangler": "^4.16.0"
+	}
+}
